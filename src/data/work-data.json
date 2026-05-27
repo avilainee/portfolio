@@ -1,0 +1,264 @@
+{
+  "name": "Marie Avilaine Imbang",
+  "projects": [
+    {
+      "name": "Photo Memoria",
+      "category": "creative",
+      "tools": ["Quasar", "Figma", "Vue", "Sass"],
+      "tags": ["Web Development", "UI/UX"],
+      "tagline": "Memories made, Photos taken",
+      "description": "A web-based photo booth application that guides users through a seamless flow — from capturing shots to selecting backgrounds and filters. Built with Vue and Quasar, the app delivers a fun and polished experience with a downloadable photo strip output.",
+      "coverImage": "img/caps-memoria.jpg",
+      "gallery": [
+        "img/caps-memoria.jpg",
+        "img/memoria-1.jpg",
+        "img/memoria-2.jpg",
+        "img/memoria-3.jpg"
+      ],
+      "link": "https://avilainee.github.io/photo-memoria/#/"
+    },
+    {
+      "name": "Potty Studio",
+      "category": "creative",
+      "tools": ["Adobe PS", "Canva"],
+      "tags": ["Branding", "Product"],
+      "tagline": "Have a muddy fun day",
+      "description": "A playful branding project for Potty Studio by Miss Dani, a pottery and clay workshop centered on creative freedom and fun. The identity spans a whimsical logo, signage, and packaging collateral — all designed to reflect the studio's warm, approachable, and hands-on personality.",
+      "coverImage": "img/mup-potty.jpg",
+      "gallery": [
+        "img/potty-1.jpg",
+        "img/potty-2.jpg",
+        "img/potty-3.jpg",
+        "img/potty-4.jpg",
+        "img/potty-5.jpg",
+        "img/potty-6.jpg"
+      ]
+    },
+    {
+      "name": "space",
+      "category": "creative",
+      "tools": ["Figma", "Canva"],
+      "tags": ["Branding", "UI/UX"],
+      "tagline": "Where your independency begins.",
+      "description": "A high-fidelity mobile app concept designed for discovering and booking premium rental properties. The design features a filterable property listing view and a detailed property profile, showcasing key information such as floor area, amenities, and location at a glance. Crafted entirely in Figma with attention to component consistency, spacing, and mobile-first layout principles.",
+      "coverImage": "img/space-1.jpg",
+      "gallery": ["img/space-1.jpg", "img/space-2.jpg", "img/space-3.jpg"],
+      "video": "vid/space.mp4"
+    },
+    {
+      "name": "MAYMOAPO",
+      "category": "academic",
+      "tools": ["Quasar", "Figma", "VueJS", "Firebase", "Sass"],
+      "tags": ["Capstone", "Web Development", "UI/UX"],
+      "tagline": "A digital memory scrapbooking app.",
+      "coverImage": "maymoapo/login.png",
+      "gallery": ["img/ps-dusk.jpg", "img/mup-potty.jpg"]
+    },
+    {
+      "name": "Sweet Clouds",
+      "category": "creative",
+      "tools": ["Adobe PS", "Canva"],
+      "tags": ["Branding", "Product"],
+      "tagline": "Scoops, waffles, and a whole lot of sweet.",
+      "description": "A full branding and print design project for Sweet Clouds, a dessert brand specializing in ice cream and waffles. The deliverables include a hanging menu, chest fridge wrap, and pint packaging — all tied together with a soft pink palette, playful cloud motifs, and a warm, inviting aesthetic.",
+      "coverImage": "img/mup-clouds.jpg",
+      "gallery": [
+        "img/clouds-1.jpg",
+        "img/clouds-2.jpg",
+        "img/clouds-3.jpg",
+        "img/clouds-4.jpg",
+        "img/clouds-5.jpg",
+        "img/clouds-6.jpg"
+      ]
+    },
+    {
+      "name": "spero",
+      "category": "creative",
+      "tools": ["Figma"],
+      "tags": ["UI/UX"],
+      "tagline": "Giving hope, one child at a time.",
+      "description": "A clean and friendly mobile app UI concept featuring a welcome screen, log-in, and sign-up flow designed with a warm blue palette. The layout prioritizes simplicity and ease of use, with role-based registration and an approachable visual style suited for a family or child-oriented platform.",
+      "coverImage": "img/spero-1.jpg",
+      "gallery": ["img/spero-2.jpg", "img/spero-3.jpg"]
+    },
+    {
+      "name": "AMIGO",
+      "category": "creative",
+      "tools": ["Adobe PS", "Canva"],
+      "tags": ["Branding", "Product"],
+      "tagline": "Greasely delicious, Birria please.",
+      "description": "A bold branding project for Amigo, a Mexican birria taco food truck concept built around a vibrant red, black, and gold identity. The design covers full truck livery, menu boards, and promotional signage — capturing the brand's lively, street-food energy with a distinctly Mexican flair.",
+      "coverImage": "img/mup-amigo.jpg",
+      "gallery": [
+        "img/amigo-1.jpg",
+        "img/amigo-2.jpg",
+        "img/amigo-3.jpg",
+        "img/amigo-4.jpg",
+        "img/amigo-5.jpg",
+        "img/amigo-6.jpg"
+      ]
+    },
+    {
+      "name": "The Toast Project",
+      "category": "creative",
+      "tools": ["Figma"],
+      "tags": ["UI/UX"],
+      "tagline": "A digital memory scrapbooking app.",
+      "coverImage": "img/toast-1.jpg",
+      "gallery": ["img/toast-1.jpg", "img/toast-2.jpg", "img/toast-3.jpg"]
+    },
+    {
+      "name": "ACTDAAN",
+      "category": "academic",
+      "tools": ["Quasar", "Figma", "VueJS", "Hostinger", "Sass"],
+      "tags": ["Capstone", "Web Development", "UI/UX"],
+      "tagline": "A digital memory scrapbooking app.",
+      "coverImage": "actdaan/login.png",
+      "gallery": ["img/ps-dusk.jpg", "img/mup-potty.jpg"]
+    }
+  ],
+  "workExperience": [
+    {
+      "workid": 1,
+      "role": "Graphic Design Support",
+      "company": "RWC CSR (Freelance)",
+      "duration": "October 2025 - Present",
+      "tools": ["Adobe Photoshop", "Canva"],
+      "details": [
+        "Provide design support by creating and editing visual assets using Adobe Photoshop.",
+        "Utilize and maintain design templates to ensure brand consistency across corporate social responsibility (CSR) initiatives.",
+        "Collaborate with the team to deliver high-quality graphics tailored for the Australian market."
+      ]
+    },
+    {
+      "workid": 2,
+      "role": "Freelance Digital Marketing & Research Assistant",
+      "company": "Remote (AU Stakeholders)",
+      "duration": "June 2025 - Present",
+      "tools": ["Mailchimp", "Web Scraping", "Google Sheets", "Canva"],
+      "details": [
+        "Developed and scheduled high-impact EDM content utilizing Mailchimp to drive engagement.",
+        "Ensured 100% consistency with the global marketing calendar for international stakeholders.",
+        "Conduct web scraping and in-depth property research to analyze market trends and provide actionable data insights."
+      ]
+    },
+    {
+      "workid": 3,
+      "role": "Frontend Development Intern",
+      "company": "Pixel8 Web Solutions & Consultancy Inc.",
+      "duration": "March 2024 - July 2024",
+      "tools": ["Vue.js", "Quasar Framework", "Git"],
+      "details": [
+        "Developed responsive web applications using Vue.js and Quasar Framework.",
+        "Managed collaborative codebases using Git to ensure streamlined version control and team synchronization.",
+        "Performed rigorous Quality Assurance (QA) testing to identify bugs and verify application integrity."
+      ]
+    },
+    {
+      "workid": 4,
+      "role": "Web Design and Development Intern",
+      "company": "i-Build PH Web Solutions and Services",
+      "duration": "August 2023 - September 2023",
+      "tools": ["Drupal", "SSH", "FTP", "HTML", "CSS"],
+      "details": [
+        "Performed content management and critical updates on client Drupal websites to ensure reliability.",
+        "Gained technical proficiency in website staging and deployment processes using SSH and FTP tools.",
+        "Implemented front-end fixes using CSS and HTML to optimize overall website appearance and functionality."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Google Data Analytics",
+      "issuer": "Coursera",
+      "date": "2025"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Polytechnic University of the Philippines",
+      "degree": "Bachelor of Science in Information Technology",
+      "honors": "Cum Laude",
+      "duration": "2026"
+    },
+    {
+      "institution": "Polytechnic University of the Philippines",
+      "degree": "Diploma in Information, Communications, and Technology",
+      "honors": "President Lister",
+      "duration": "2024"
+    }
+  ],
+  "capstone": [
+    {
+      "academicTitle": "ACTDAAN: AI-Powered Citizen Reporting and Repair Completion Monitoring with Media Analysis for Road Issues in Metro Manila, Philippines",
+      "name": "ACTDAAN",
+      "type": "Capstone Project",
+      "role": "Full-Stack Developer",
+      "duration": "June 2025 – December 2025",
+      "tools": [
+        { "name": "Vue", "percent": 59.2, "color": "#42b883" },
+        { "name": "JavaScript", "percent": 34.1, "color": "#f1e05a" },
+        { "name": "SCSS", "percent": 3.5, "color": "#c6538c" },
+        { "name": "HTML", "percent": 3.2, "color": "#e34c26" }
+      ],
+      "software": ["Quasar", "Figma", "VueJS", "Hostinger", "phpmyAdmin", "Sass"],
+      "client": "QC Department of Engineering",
+      "clientLogo": "actdaan/logo.png",
+      "coverImage": "actdaan/login.png",
+      "gallery": [
+        "actdaan/login.png",
+        "actdaan/dashboard.png",
+        "actdaan/file.png",
+        "actdaan/announcement.png"
+      ],
+      "details": [
+        "Developed a full-stack web application using Vue 3 (Quasar) and Node.js with a MySQL database.",
+        "Designed and implemented a unified database schema for account and report management.",
+        "Built secure authentication features including OTP verification and password recovery system.",
+        "Implemented geotagging and map-based visualization for tracking reported road issues.",
+        "Developed RESTful APIs for handling user registration, login, and report submission.",
+        "Managed dynamic data integration for location-based dropdowns including region, province, city, and barangay.",
+        "Applied ISO/IEC 25010 software quality standards in system evaluation."
+      ],
+      "demo": ["https://www.youtube.com/embed/yDnyubTXnq0?si=OEbKSJW4xBs8gvdh"],
+      "link": "https://actdaan.org/#/login"
+    },
+    {
+      "academicTitle": "MAYMOAPO: A Web Based Memorandum of Agreement Processing System with a Database of Existing MOAs for Students and OJT Coordinator at Polytechnic University of the Philippines -Institute of Technology Santa Mesa, Manila",
+      "name": "MAYMOAPO",
+      "type": "Internship Project",
+      "role": "Full-Stack Developer",
+      "duration": "March 2024 – July 2024",
+      "software": ["Quasar", "Figma", "VueJS", "Firebase", "Sass"],
+      "tools": [
+        { "name": "Vue", "percent": 67.4, "color": "#42b883" },
+        { "name": "JavaScript", "percent": 31.3, "color": "#f1e05a" },
+        { "name": "SCSS", "percent": 1.1, "color": "#c6538c" },
+        { "name": "HTML", "percent": 0.3, "color": "#e34c26" }
+      ],
+      "client": "PUP iTECH (Quality Assurance and OJT)",
+      "clientLogo": "maymoapo/logo.png",
+      "coverImage": "maymoapo/login.png",
+      "gallery": [
+        "maymoapo/login.png",
+        "maymoapo/files.png",
+        "maymoapo/request.png",
+        "maymoapo/process.png"
+      ],
+      "details": [
+        "Built a document processing system using Vue.js (Quasar) to digitize and streamline MOA workflows.",
+        "Developed dynamic components and reusable UI elements for scalable front-end architecture.",
+        "Implemented CRUD operations and state management for real-time document tracking.",
+        "Integrated Firebase services for secure data and file handling.",
+        "Improved user experience by optimizing navigation, layout, and form interactions.",
+        "Collaborated in an agile team environment, contributing to feature development and issue resolution.",
+        "Produced technical documentation and deployment guides for maintainability."
+      ],
+      "demo": [
+        "https://www.youtube.com/embed/WY3MXGSoqqA?si=dNea0akVjXYml1DV",
+        "https://www.youtube.com/embed/R_EtuwyKguY?si=SPwIBfG6JFJ-T4Er"
+      ],
+      "link": "https://maymoapo-815ee.firebaseapp.com/#/"
+    }
+  ]
+}

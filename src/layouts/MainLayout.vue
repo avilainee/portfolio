@@ -1,22 +1,109 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+    <q-header reveal unelevated class="bg-white">
+      <q-toolbar class="text-dark q-py-none">
+        <q-btn
+          flat
+          round
+          @click="toggleLeftDrawer"
+          aria-label="Menu"
+          icon="menu"
+          class="hide-lg show-md show-sm"
+        />
+        <q-space class="hide-lg show-md show-sm" />
+        <div>
+          <q-btn no-caps dense flat unelevated to="/" class="text-h5 text-dark text-weight-bolder">
+            avilainee
+          </q-btn>
+        </div>
+        <q-space />
+        <q-tabs align="left" class="hide-sm hide-md show-lg">
+          <q-route-tab to="/about" label="About" />
+          <q-route-tab to="/works" label="Works" />
+        </q-tabs>
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn
+          flat
+          round
+          href="mailto:imbang.marieavilaine@gmail.com"
+          aria-label="Menu"
+          icon="mail"
+          class="hide-lg show-md show-sm"
+        />
       </q-toolbar>
+      <q-drawer v-model="leftDrawerOpen" bordered class="bg-white text-dark">
+        <q-list padding>
+          <div class="vertical-top">
+            <!-- Logo / Brand -->
+            <q-item class="q-mb-md q-mt-sm">
+              <q-item-section>
+                <q-item-label class="text-h5 text-weight-bold title-font text-primary">
+                  Portfolio
+                </q-item-label>
+                <q-item-label caption>of Avilaine Imbang</q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <!-- Nav Links -->
+
+            <q-item clickable v-ripple to="/about" active-class="text-primary text-weight-bold">
+              <q-item-section>
+                <q-item-label class="text-uppercase text-weight-medium">About</q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple to="/works" active-class="text-primary text-weight-bold">
+              <q-item-section>
+                <q-item-label class="text-uppercase text-weight-medium">Works</q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+          <q-space />
+          <div class="absolute-bottom q-pl-md q-pb-lg">
+            <q-btn
+              flat
+              round
+              color="primary"
+              icon="fa-brands fa-facebook-f"
+              clickable
+              target="_blank"
+              rel="noopener"
+              href="https://www.facebook.com/crearebyavilaine"
+            />
+            <q-btn
+              flat
+              round
+              color="primary"
+              icon="fa-brands fa-instagram"
+              clickable
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/crearebyavilaine/"
+            />
+            <q-btn
+              flat
+              round
+              color="primary"
+              icon="fa-brands fa-linkedin-in"
+              clickable
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/imbang-marie-avilaine/"
+            />
+            <q-btn
+              flat
+              round
+              color="primary"
+              icon="fa-brands fa-whatsapp"
+              clickable
+              target="_blank"
+              rel="noopener"
+              href="tel:+639208004011"
+            />
+          </div>
+        </q-list>
+      </q-drawer>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-      <q-list>
-        <q-item-label header> Essential Links </q-item-label>
-
-        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
-      </q-list>
-    </q-drawer>
 
     <q-page-container>
       <router-view />
@@ -24,58 +111,23 @@
   </q-layout>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev',
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework',
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev',
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev',
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
-  },
-]
+export default {
+  name: 'MyLayout',
 
-const leftDrawerOpen = ref(false)
+  setup() {
+    const leftDrawerOpen = ref(false)
 
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value
+    function toggleLeftDrawer() {
+      leftDrawerOpen.value = !leftDrawerOpen.value
+    }
+
+    return {
+      leftDrawerOpen,
+      toggleLeftDrawer,
+    }
+  },
 }
 </script>
