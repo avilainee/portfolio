@@ -169,9 +169,19 @@
   ],
   "certifications": [
     {
-      "title": "Google Data Analytics",
-      "issuer": "Coursera",
+      "title": "INTRODUCTION TO THE THREAT LANDSCAPE 3.0",
+      "issuer": "Fortinet",
       "date": "2025"
+    },
+    {
+      "title": "INTRODUCTION TO CYBERSECURITY",
+      "issuer": "Cisco",
+      "date": "2025"
+    },
+    {
+      "title": "COMPUTER SYSTEMS SERVICING NC II",
+      "issuer": "TESDA",
+      "date": "2023"
     }
   ],
   "education": [

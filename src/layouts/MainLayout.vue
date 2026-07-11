@@ -17,10 +17,21 @@
           </q-btn>
         </div>
         <q-space />
-        <q-tabs align="left" class="hide-sm hide-md show-lg">
-          <q-route-tab to="/about" label="About" />
-          <q-route-tab to="/works" label="Works" />
+        <q-tabs align="left" class="hide-sm hide-md show-lg q-mr-lg">
+          <q-route-tab label="About" @click="toggledrawerAbout" />
+          <q-route-tab @click="goToSection('works')" label="Works" />
         </q-tabs>
+        <q-btn
+          unelevated
+          rounded
+          no-caps
+          color="dark"
+          label="Contact me"
+          href="mailto:imbang.marieavilaine@gmail.com"
+          class="show-lg hode-md hide-sm"
+        >
+          <q-icon right name="arrow_outward" size="xs"
+        /></q-btn>
 
         <q-btn
           flat
@@ -103,6 +114,18 @@
           </div>
         </q-list>
       </q-drawer>
+
+      <q-drawer
+        v-model="drawerAboutOpen"
+        :width="900"
+        :breakpoint="500"
+        side="right"
+        overlay
+        bordered
+        :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
+      >
+        <AboutSection />
+      </q-drawer>
     </q-header>
 
     <q-page-container>
@@ -113,20 +136,48 @@
 
 <script>
 import { ref } from 'vue'
+import AboutSection from 'src/components/AboutSection.vue'
+import { useRouter, useRoute } from 'vue-router'
 
 export default {
   name: 'MyLayout',
 
+  components: {
+    AboutSection,
+  },
+
   setup() {
     const leftDrawerOpen = ref(false)
+    const drawerAboutOpen = ref(false)
 
     function toggleLeftDrawer() {
       leftDrawerOpen.value = !leftDrawerOpen.value
     }
 
+    function toggledrawerAbout() {
+      drawerAboutOpen.value = !drawerAboutOpen.value
+    }
+
+    const router = useRouter()
+    const route = useRoute()
+
+    const goToSection = async (id) => {
+      if (route.path !== '/') {
+        await router.push({ path: '/', hash: `#${id}` })
+      } else {
+        const el = document.getElementById(id)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+    }
+
     return {
       leftDrawerOpen,
+      drawerAboutOpen,
       toggleLeftDrawer,
+      toggledrawerAbout,
+      goToSection
     }
   },
 }

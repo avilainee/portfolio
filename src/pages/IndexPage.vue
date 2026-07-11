@@ -1,6 +1,36 @@
 <template>
   <q-page>
     <!--hero-->
+    <div class="flex flex-center q-py-xl">
+      <div class="column flex-center q-gutter-y-lg">
+        <img
+          alt="Avilaine Imbang"
+          src="~assets/avi.svg"
+          class="margin-auto"
+          :style="$q.screen.lt.md ? 'width: 100%; max-width: 100%;' : ''"
+        />
+        <div
+          class="text-center text-weight-medium"
+          :class="$q.screen.lt.md ? 'text-h2' : 'text-h1'"
+        >
+          <span class="text-weight-bold text-primary title-font">Avilaine Imbang</span>
+          —<br />Creative Thinker
+        </div>
+        <div class="q-gutter-x-sm">
+          <q-btn
+            unelevated
+            rounded
+            no-caps
+            color="dark"
+            label="Contact me"
+            href="mailto:imbang.marieavilaine@gmail.com"
+          >
+            <q-icon right name="arrow_outward" size="xs"
+          /></q-btn>
+        </div>
+      </div>
+    </div>
+    <!--hero
     <div class="flex flex-center q-py-xl bg-grey-2">
       <div class="column flex-center q-py-xl q-gutter-y-lg">
         <img alt="Avilaine Imbang" src="~assets/img-avi-casual.svg" class="height-2" />
@@ -15,12 +45,19 @@
           vision independently.
         </div>
         <div class="q-gutter-x-sm">
-          <q-btn unelevated rounded no-caps color="dark" label="Contact me" href="mailto:imbang.marieavilaine@gmail.com">
+          <q-btn
+            unelevated
+            rounded
+            no-caps
+            color="dark"
+            label="Contact me"
+            href="mailto:imbang.marieavilaine@gmail.com"
+          >
             <q-icon right name="arrow_outward" size="xs"
           /></q-btn>
         </div>
       </div>
-    </div>
+    </div>-->
     <!--strip-->
     <q-banner class="text-white bg-primary">
       <div class="marquee text-h6 q-gutter-x-xl width-10">
@@ -76,9 +113,8 @@
               <div class="text-body2 text-grey-5">
                 Highly proficient in <span class="text-accent text-weight-bold">Canva</span> for
                 rapid, high-impact asset creation while providing essential corporate design support
-                via <span class="text-accent text-weight-bold">Adobe Photoshop</span>. I bridge
-                the gap between frontend development and graphic design to maintain brand
-                consistency.
+                via <span class="text-accent text-weight-bold">Adobe Photoshop</span>. I bridge the
+                gap between frontend development and graphic design to maintain brand consistency.
               </div>
             </div>
 
@@ -91,8 +127,8 @@
                 Maximizing engagement through
                 <span class="text-accent text-weight-bold">Mailchimp automation</span>. I combine
                 web scraping with organized
-                <span class="text-accent text-weight-bold">data management on Google Sheets</span
-                >, enabling an efficient workflow to provide actionable insights for stakeholders.
+                <span class="text-accent text-weight-bold">data management on Google Sheets</span>,
+                enabling an efficient workflow to provide actionable insights for stakeholders.
               </div>
             </div>
 
@@ -103,8 +139,8 @@
               </div>
               <div class="text-body2 text-grey-5">
                 Ensuring success through rigorous
-                <span class="text-accent text-weight-bold">Quality Assurance (QA)</span> testing
-                and design reviews. I implement a
+                <span class="text-accent text-weight-bold">Quality Assurance (QA)</span> testing and
+                design reviews. I implement a
                 <span class="text-accent text-weight-bold"
                   >strict task checklist before and after</span
                 >
@@ -117,14 +153,14 @@
     </q-banner>
     <!--toolkit-->
     <q-banner class="flex flex-center q-py-xl bg-grey-2">
-      <div class="text-center text-h3 text-weight-medium  q-pt-xl q-pb-md text-grey-9 title-font">
+      <div class="text-center text-h3 text-weight-medium q-pt-xl q-pb-md text-grey-9 title-font">
         Creative & Technical Toolkit
       </div>
       <div class="text-center text-body1 q-pb-lg text-grey-8 lg-width-4 md-width-4 margin-auto">
         A collection of tools and technologies I’ve worked with across design, development, and
         digital marketing—used to create, manage, and deliver effective solutions.
       </div>
-      <div class=" q-pb-xl">
+      <div class="q-pb-xl">
         <!-- Row 1 -->
         <div class="row justify-center margin-auto">
           <div class="col-6 col-sm-4 col-md-2 col-lg-1">
@@ -173,22 +209,25 @@
         </div>
       </div>
     </q-banner>
+    <q-banner class="flex flex-center q-py-xl" id="works">
+      <WorkSection />
+    </q-banner>
     <!--featured-->
-    <div class="flex flex-center q-py-xl">
+    <!--<div class="flex flex-center q-py-xl">
       <div class="row flex-center q-py-xl">
         <div class="col-12">
           <div class="text-center text-h3 text-weight-medium q-pb-xl text-grey-9">
             <span class=" title-font">What I Build</span>
           </div>
           
-          <!--<div
+          <div
             class="text-center text-body1 q-pb-lg text-grey-8 width-8 lg-width-4 md-width-8 margin-auto"
           >
             A showcase of full-stack web applications and digital solutions developed during my
             academic and professional journey—integrating technical reliability with intuitive user
             experience. This section also highlights the creative design projects I pursue to
             continuously refine my visual storytelling and UI/UX skills.
-          </div>-->
+          </div>
         </div>
         <q-card
           class="col-10 col-sm-5 col-md-3 col-lg-3 q-ma-sm  card-border"
@@ -223,7 +262,7 @@
             </div>
           </q-card-section>
         </q-card>
-        <!--
+        
         <q-card
           class="col-10 col-sm-5 col-md-3 col-lg-3 q-ma-sm card-border"
           flat
@@ -253,7 +292,7 @@
               to="/works"
             />
           </q-card-actions>
-        </q-card>-->
+        </q-card>
         <div class="col-12 text-center q-mt-md">
         <q-btn
               unelevated 
@@ -265,12 +304,13 @@
               to="/works"
             /></div>
       </div>
-    </div>
+    </div>-->
     <!--footer-->
-    <FooterSection/>
+    <FooterSection />
   </q-page>
 </template>
 <script setup>
 import FooterSection from 'src/components/FooterSection.vue'
+import WorkSection from 'src/components/WorkSection.vue'
 
 </script>
