@@ -19,7 +19,6 @@
         <q-space />
         <q-tabs align="left" class="hide-sm hide-md show-lg q-mr-lg">
           <q-route-tab label="About" @click="toggledrawerAbout" />
-          <q-route-tab @click="goToSection('works')" label="Works" />
         </q-tabs>
         <q-btn
           unelevated
@@ -60,12 +59,6 @@
             <q-item clickable v-ripple to="/about" active-class="text-primary text-weight-bold">
               <q-item-section>
                 <q-item-label class="text-uppercase text-weight-medium">About</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-item clickable v-ripple to="/works" active-class="text-primary text-weight-bold">
-              <q-item-section>
-                <q-item-label class="text-uppercase text-weight-medium">Works</q-item-label>
               </q-item-section>
             </q-item>
           </div>

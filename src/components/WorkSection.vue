@@ -1,8 +1,15 @@
 <template>
-  <div class="text-center text-h3 text-weight-medium q-pt-xl q-pb-md text-primary title-font">
-    Academic and Creative Works
+  <div
+    class="text-center text-weight-medium q-pt-xl q-pb-lg text-grey-9 title-font"
+    :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'"
+  >
+    Personal Archive
   </div>
-  <!--featured-->
+  <div class="text-center text-body1 q-pb-lg text-grey-8 lg-width-3 md-width-3 margin-auto">
+    Selected concept work and speculative design projects exploring new tools, systems, and creative
+    problem-solving.
+  </div>
+  <!--featured
   <div class="flex flex-center q-py-xl">
     <div class="row justify-center">
       <div>
@@ -35,12 +42,14 @@
         </q-card>
       </div>
     </div>
-  </div>
+  </div>-->
+  <WorksBento />
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import WorksGrid from 'src/components/WorksGrid.vue'
+//import { ref } from 'vue'
+//import WorksGrid from 'src/components/WorksGrid.vue'
+import WorksBento from 'src/components/WorksBento.vue'
 
-const tab = ref('all')
+//const tab = ref('all')
 </script>

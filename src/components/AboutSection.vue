@@ -67,6 +67,45 @@
       </div>
     </q-banner>
     <q-separator/>
+    <!--capstone-->
+    <q-banner class="flex flex-center q-pb-xl">
+      <div class="lg-width-4 md-width-4 margin-auto">
+        <div class="text-h3 text-weight-medium q-py-xl text-grey-9 title-font">
+          Capstone Project
+        </div>
+        <q-card flat bordered v-for="caps in capstone" :key="caps.title" class="q-mb-md">
+          <q-img :src="caps.coverImage" :ratio="16 / 9" class="rounded-borders" />
+
+          <q-card-section>
+            <div class="text-h6 text-weight-medium q-mt-sm q-mb-xs text-dark">
+              {{ caps.academicTitle }}
+            </div>
+            <div class="text-caption text-grey">
+              {{ caps.duration }}
+            </div>
+          </q-card-section>
+          <q-card-actions>
+            <q-avatar
+              size="'xl'"
+              class="absolute"
+              style="bottom: 0; right: 12px; transform: translateY(-50%)"
+            >
+              <img :src="caps.clientLogo" />
+            </q-avatar>
+            <q-btn
+              flat
+              rounded
+              no-caps
+              color="primary"
+              label="View Details"
+              icon-right="keyboard_arrow_right"
+              @click="openShowcase(caps)"
+            />
+          </q-card-actions>
+        </q-card>
+      </div>
+    </q-banner>
+    <q-separator />
     <!--certification-->
     <q-banner class="flex flex-center q-pb-xl">
       <div class="lg-width-4 md-width-4 margin-auto">
@@ -97,13 +136,33 @@
         </div>
       </div>
     </q-banner>
+
+    <q-dialog v-model="showShowcase" :backdrop-filter="'brightness(30%)'">
+      <q-card style="width: 150vh; max-width: 95vw" class="q-px-none hide-scrollbar">
+        <q-card-actions class="q-pa-none fixed-top-right">
+          <q-btn flat color="grey" icon="close" v-close-popup />
+        </q-card-actions>
+        <q-card-section class="">
+          <ProjectShowcase :selected-proj="selectedProject?.name" />
+        </q-card-section>
+      </q-card>
+    </q-dialog>
 </template>
 <script setup>
 import { ref } from 'vue'
 import profileData from '../data/work-data.json'
+import ProjectShowcase from 'src/components/ProjectShowcase.vue'
 
 const workExperience = ref(profileData.workExperience)
 const education = ref(profileData.education)
 const certification = ref(profileData.certifications)
+const capstone = ref(profileData.capstone)
 
+const selectedProject = ref(null)
+const showShowcase = ref(false)
+
+function openShowcase(proj) {
+  selectedProject.value = proj
+  showShowcase.value = true
+}
 </script>

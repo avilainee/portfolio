@@ -32,7 +32,7 @@
     <!--expi-->
     <q-banner class="flex flex-center q-py-xl bg-grey-2">
       <div class="lg-width-4 md-width-4 margin-auto">
-        <div class="text-h3 text-weight-medium q-pt-xl q-pb-md text-primary title-font">
+        <div class="text-weight-medium q-pt-xl q-pb-md text-primary title-font" :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'">
           Work Experience
         </div>
         <q-timeline color="primary">
@@ -125,7 +125,7 @@
     <!--certification-->
     <q-banner class="flex flex-center q-pb-xl">
       <div class="lg-width-6 md-width-6 margin-auto">
-        <div class="text-h3 text-center text-weight-medium q-py-xl text-grey-9 title-font">Certifications</div>
+        <div class="text-center text-weight-medium q-py-xl text-grey-9 title-font" :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'">Certifications</div>
         <div class="row justify-center">
           <q-card
             flat

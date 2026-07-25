@@ -5,7 +5,7 @@
       "name": "Photo Memoria",
       "category": "creative",
       "tools": ["Quasar", "Figma", "Vue", "Sass"],
-      "tags": ["Web Development", "UI/UX"],
+      "tags": "Web Development",
       "tagline": "Memories made, Photos taken",
       "description": "A web-based photo booth application that guides users through a seamless flow — from capturing shots to selecting backgrounds and filters. Built with Vue and Quasar, the app delivers a fun and polished experience with a downloadable photo strip output.",
       "coverImage": "img/caps-memoria.jpg",
@@ -21,7 +21,7 @@
       "name": "Potty Studio",
       "category": "creative",
       "tools": ["Adobe PS", "Canva"],
-      "tags": ["Branding", "Product"],
+      "tags": "Branding",
       "tagline": "Have a muddy fun day",
       "description": "A playful branding project for Potty Studio by Miss Dani, a pottery and clay workshop centered on creative freedom and fun. The identity spans a whimsical logo, signage, and packaging collateral — all designed to reflect the studio's warm, approachable, and hands-on personality.",
       "coverImage": "img/mup-potty.jpg",
@@ -38,7 +38,7 @@
       "name": "space",
       "category": "creative",
       "tools": ["Figma", "Canva"],
-      "tags": ["Branding", "UI/UX"],
+      "tags": "UI/UX",
       "tagline": "Where your independency begins.",
       "description": "A high-fidelity mobile app concept designed for discovering and booking premium rental properties. The design features a filterable property listing view and a detailed property profile, showcasing key information such as floor area, amenities, and location at a glance. Crafted entirely in Figma with attention to component consistency, spacing, and mobile-first layout principles.",
       "coverImage": "img/space-1.jpg",
@@ -58,7 +58,7 @@
       "name": "Sweet Clouds",
       "category": "creative",
       "tools": ["Adobe PS", "Canva"],
-      "tags": ["Branding", "Product"],
+      "tags": "Branding",
       "tagline": "Scoops, waffles, and a whole lot of sweet.",
       "description": "A full branding and print design project for Sweet Clouds, a dessert brand specializing in ice cream and waffles. The deliverables include a hanging menu, chest fridge wrap, and pint packaging — all tied together with a soft pink palette, playful cloud motifs, and a warm, inviting aesthetic.",
       "coverImage": "img/mup-clouds.jpg",
@@ -75,7 +75,7 @@
       "name": "spero",
       "category": "creative",
       "tools": ["Figma"],
-      "tags": ["UI/UX"],
+      "tags": "UI/UX",
       "tagline": "Giving hope, one child at a time.",
       "description": "A clean and friendly mobile app UI concept featuring a welcome screen, log-in, and sign-up flow designed with a warm blue palette. The layout prioritizes simplicity and ease of use, with role-based registration and an approachable visual style suited for a family or child-oriented platform.",
       "coverImage": "img/spero-1.jpg",
@@ -85,7 +85,7 @@
       "name": "AMIGO",
       "category": "creative",
       "tools": ["Adobe PS", "Canva"],
-      "tags": ["Branding", "Product"],
+      "tags": "Branding",
       "tagline": "Greasely delicious, Birria please.",
       "description": "A bold branding project for Amigo, a Mexican birria taco food truck concept built around a vibrant red, black, and gold identity. The design covers full truck livery, menu boards, and promotional signage — capturing the brand's lively, street-food energy with a distinctly Mexican flair.",
       "coverImage": "img/mup-amigo.jpg",
@@ -102,10 +102,19 @@
       "name": "The Toast Project",
       "category": "creative",
       "tools": ["Figma"],
-      "tags": ["UI/UX"],
+      "tags": "UI/UX",
       "tagline": "A digital memory scrapbooking app.",
       "coverImage": "img/toast-1.jpg",
       "gallery": ["img/toast-1.jpg", "img/toast-2.jpg", "img/toast-3.jpg"]
+    },
+    {
+      "name": "Jeangban Craver",
+      "category": "creative",
+      "tools": ["Adobe PS", "Canva"],
+      "tags": "Branding",
+      "tagline": "Banging with every bite.",
+      "coverImage": "img/jeangban-2.png",
+      "gallery": ["img/jeangban-1.png", "img/jeangban-2.png", "img/jeangban-3.png", "img/jeangban-4.png", "img/jeangban-5.png"]
     },
     {
       "name": "ACTDAAN",
@@ -120,14 +129,14 @@
   "workExperience": [
     {
       "workid": 1,
-      "role": "Graphic Design Support",
+      "role": "Marketing Graphic Assistant",
       "company": "RWC CSR (Freelance)",
       "duration": "October 2025 - Present",
       "tools": ["Adobe Photoshop", "Canva"],
       "details": [
-        "Provide design support by creating and editing visual assets using Adobe Photoshop.",
-        "Utilize and maintain design templates to ensure brand consistency across corporate social responsibility (CSR) initiatives.",
-        "Collaborate with the team to deliver high-quality graphics tailored for the Australian market."
+        "Design weekly social media tiles in Figma for a real estate client, matching established brand fonts, colors, and identity guidelines.",
+        "Produce property image markups in Photoshop 3x monthly (outlines, callouts, location markups), delivering multiple versions per property.",
+        "Create property Information Memorandums in Canva 3x monthly using branded templates and client-supplied content."
       ]
     },
     {
@@ -137,9 +146,8 @@
       "duration": "June 2025 - Present",
       "tools": ["Mailchimp", "Web Scraping", "Google Sheets", "Canva"],
       "details": [
-        "Developed and scheduled high-impact EDM content utilizing Mailchimp to drive engagement.",
-        "Ensured 100% consistency with the global marketing calendar for international stakeholders.",
-        "Conduct web scraping and in-depth property research to analyze market trends and provide actionable data insights."
+        "Produce ~100 social media promotional posters monthly (IG Story, FB Post, A3) in Canva for a film/entertainment client, customizing release-countdown templates with location, date, and cinema details.",
+        "Conduct lead research and outreach (fishing charters, bait shops) tied to client content, compiling contacts and messaging prospects via Instagram for partnerships."
       ]
     },
     {

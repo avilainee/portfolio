@@ -6,7 +6,7 @@
         <img
           alt="Avilaine Imbang"
           src="~assets/avi.svg"
-          class="margin-auto"
+          class="margin-auto round-corners"
           :style="$q.screen.lt.md ? 'width: 100%; max-width: 100%;' : ''"
         />
         <div
@@ -14,7 +14,16 @@
           :class="$q.screen.lt.md ? 'text-h2' : 'text-h1'"
         >
           <span class="text-weight-bold text-primary title-font">Avilaine Imbang</span>
-          —<br />Creative Thinker
+          <br />—
+          <span :class="$q.screen.lt.md ? 'text-h2' : 'text-h1'" class="text-weight-medium"
+            >Creative Thinker
+          </span>
+          <q-chip
+            color="accent"
+            :size="$q.screen.lt.md ? 'md' : 'lg'"
+            text-color="white"
+            label="available for work"
+          />
         </div>
         <div class="q-gutter-x-sm">
           <q-btn
@@ -23,9 +32,10 @@
             no-caps
             color="dark"
             label="Contact me"
+            :size="$q.screen.lt.md ? 'lg' : 'lg'"
             href="mailto:imbang.marieavilaine@gmail.com"
           >
-            <q-icon right name="arrow_outward" size="xs"
+            <q-icon right name="arrow_outward" size="sm"
           /></q-btn>
         </div>
       </div>
@@ -79,77 +89,53 @@
         </div>
       </div>
     </q-banner>
-    <!--skills-->
+    <!--services-->
     <q-banner class="flex flex-center q-py-xl text-white bg-dark">
-      <div class="row justify-center q-py-xl">
-        <div class="col-10 col-md-3 q-pb-xl">
-          <h2 class="text-h3 text-weight-bold text-white q-ma-none line-height-1">
-            Why choose me <br />
-            as a partner?
-          </h2>
-        </div>
-
-        <div class="col-10 col-md-6">
-          <div class="row q-col-gutter-xl">
-            <div class="col-12 col-sm-6">
-              <q-icon name="widgets" color="accent" size="44px" class="q-mb-md" />
-              <div class="text-h6 text-white text-weight-bold q-mb-sm">
-                Technical Expertise & Specialization
-              </div>
-              <div class="text-body2 text-grey-5">
-                Leveraging a
-                <span class="text-accent text-weight-bold">Cum Laude</span> background in IT to
-                build high-performance web applications. I specialize in
-                <span class="text-accent text-weight-bold">Vue 3 and the Quasar Framework</span>,
-                prioritizing seamless UI implementation and modern, scalable architecture.
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6">
-              <q-icon name="auto_awesome_mosaic" color="accent" size="44px" class="q-mb-md" />
-              <div class="text-h6 text-white text-weight-bold q-mb-sm">
-                Versatile Visual Solutions
-              </div>
-              <div class="text-body2 text-grey-5">
-                Highly proficient in <span class="text-accent text-weight-bold">Canva</span> for
-                rapid, high-impact asset creation while providing essential corporate design support
-                via <span class="text-accent text-weight-bold">Adobe Photoshop</span>. I bridge the
-                gap between frontend development and graphic design to maintain brand consistency.
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6">
-              <q-icon name="analytics" color="accent" size="44px" class="q-mb-md" />
-              <div class="text-h6 text-white text-weight-bold q-mb-sm">
-                Data Management & Marketing
-              </div>
-              <div class="text-body2 text-grey-5">
-                Maximizing engagement through
-                <span class="text-accent text-weight-bold">Mailchimp automation</span>. I combine
-                web scraping with organized
-                <span class="text-accent text-weight-bold">data management on Google Sheets</span>,
-                enabling an efficient workflow to provide actionable insights for stakeholders.
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6">
-              <q-icon name="checklist_rtl" color="accent" size="44px" class="q-mb-md" />
-              <div class="text-h6 text-white text-weight-bold q-mb-sm">
-                Reliable Execution & Quality
-              </div>
-              <div class="text-body2 text-grey-5">
-                Ensuring success through rigorous
-                <span class="text-accent text-weight-bold">Quality Assurance (QA)</span> testing and
-                design reviews. I implement a
-                <span class="text-accent text-weight-bold"
-                  >strict task checklist before and after</span
-                >
-                every assignment to guarantee technical reliability and brand alignment.
-              </div>
-            </div>
+      <div class="row flex-center q-gutter-x-sm q-py-xl">
+        <div class="col-12 col-md-3 q-pb-md" :class="$q.screen.lt.md ? 'text-center' : 'text-left'">
+          <div class="text-weight-bold text-white q-ma-none line-height-1" :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'">
+            Here's How I Can<br/>Help You Grow
           </div>
         </div>
+        <div class="col-12 col-md-4" :class="$q.screen.lt.md ? 'text-center' : 'text-right'">
+          <q-chip
+            color="secondary"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="white"
+            label="Graphic Design"
+          /><q-avatar color="warning" text-color="dark" icon="tag" :size="$q.screen.lt.md ? 'lg' : 'xl'" />
+          <q-chip
+            color="primary"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="dark"
+            label="Brand Consistency"
+          />
+          <br /><q-chip
+            color="accent"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="dark"
+            label="Social Media Assets"
+          /><q-avatar color="secondary" text-color="white" icon="bolt" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br /><q-avatar>
+            <img src="~assets/img-avi-casual-2.svg" :size="$q.screen.lt.md ? 'lg' : 'xl'"/>
+          </q-avatar>
+          <q-chip
+            color="warning"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="dark"
+            label="Template Design"
+          />
+          <q-chip
+            color="accent"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="dark"
+            label="Web Design"
+          />
+        </div>
       </div>
+    </q-banner>
+    <!--works-->
+    <q-banner class="flex flex-center q-py-xl" id="works">
+      <WorkSection />
     </q-banner>
     <!--toolkit-->
     <q-banner class="flex flex-center q-py-xl bg-grey-2">
@@ -208,9 +194,6 @@
           </div>
         </div>
       </div>
-    </q-banner>
-    <q-banner class="flex flex-center q-py-xl" id="works">
-      <WorkSection />
     </q-banner>
     <!--featured-->
     <!--<div class="flex flex-center q-py-xl">
@@ -312,5 +295,9 @@
 <script setup>
 import FooterSection from 'src/components/FooterSection.vue'
 import WorkSection from 'src/components/WorkSection.vue'
-
 </script>
+<style>
+.round-corners {
+  border-radius: 8px;
+}
+</style>
