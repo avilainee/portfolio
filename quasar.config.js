@@ -22,7 +22,7 @@ export default defineConfig((ctx) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-webpack/boot-files
-    boot: [],
+    boot: ['scrollreveal'],
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#css
     css: ['app.scss'],
@@ -44,7 +44,7 @@ export default defineConfig((ctx) => {
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#build
     build: {
       publicPath: '/portfolio/',
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // instead of 'hash' // available values: 'hash', 'history'
 
       // webpackTranspile: false,
 

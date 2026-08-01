@@ -11,7 +11,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[2])"
                 >
                   <q-img :src="group[2].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : (18.2 / 9)" class="bento-img">
@@ -26,7 +26,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[3])"
                 >
                   <q-img :src="group[3].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : 1" class="bento-img">
@@ -55,7 +55,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[2])"
                 >
                   <q-img :src="group[2].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : (16 / 9)" class="bento-img">
@@ -73,7 +73,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[7])"
                 >
                   <q-img :src="group[7].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : 1" class="bento-img">
@@ -88,7 +88,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[6])"
                 >
                   <q-img :src="group[6].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : 1" class="bento-img">
@@ -106,7 +106,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[0])"
                 >
                   <q-img :src="group[0].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : (16 / 9)" class="bento-img">
@@ -127,7 +127,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[3])"
                 >
                   <q-img :src="group[3].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : (16 / 9)" class="bento-img">
@@ -145,7 +145,7 @@
                 <q-card
                   flat
                   bordered
-                  class="cursor-pointer bento-card"
+                  class="reveal cursor-pointer bento-card"
                   @click="openShowcase(group[1])"
                 >
                   <q-img :src="group[1].coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : (16 / 9)" class="bento-img">
@@ -164,7 +164,7 @@
                 v-for="proj in [group[4], group[5]].filter(Boolean)"
                 :key="proj.name"
               >
-                <q-card flat bordered class="cursor-pointer bento-card" @click="openShowcase(proj)">
+                <q-card flat bordered class="reveal cursor-pointer bento-card" @click="openShowcase(proj)">
                   <q-img :src="proj.coverImage" :ratio="$q.screen.lt.md ? (16 / 9) : 1" class="bento-img">
                     <div class="absolute-bottom bento-overlay">
                       <div class="text-caption text-uppercase">{{ proj.tags }}</div>
@@ -222,7 +222,7 @@ const projectGroups = computed(() => {
   for (let i = 0; i < filteredProjects.value.length; i += 8) {
     groups.push(filteredProjects.value.slice(i, i + 8))
   }
-  console.log(groups)
+  
   return groups
 })
 
@@ -240,6 +240,18 @@ function openShowcase(proj) {
   selectedProject.value = proj
   showShowcase.value = true
 }
+
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
+
+onMounted(() => {
+  ScrollReveal().reveal('.reveal', {
+    distance: '80px',
+    origin: 'bottom',
+    duration: 800,
+    easing: 'ease-out'
+  })
+})
 </script>
 
 <style scoped>

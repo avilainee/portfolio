@@ -90,10 +90,10 @@
       </div>
     </q-banner>
     <!--services-->
-    <q-banner class="flex flex-center q-py-xl text-white bg-dark">
+    <q-banner class="flex flex-center q-py-xl text-white bg-dark ">
       <div class="row flex-center q-gutter-x-sm q-py-xl">
         <div class="col-12 col-md-3 q-pb-md" :class="$q.screen.lt.md ? 'text-center' : 'text-left'">
-          <div class="text-weight-bold text-white q-ma-none line-height-1" :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'">
+          <div class="reveal text-weight-bold text-white q-ma-none line-height-1" :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'">
             Here's How I Can<br/>Help You Grow
           </div>
         </div>
@@ -103,19 +103,22 @@
             :size="$q.screen.lt.md ? 'lg' : 'xl'"
             text-color="white"
             label="Graphic Design"
-          /><q-avatar color="warning" text-color="dark" icon="tag" :size="$q.screen.lt.md ? 'lg' : 'xl'" />
+            class="reveal"
+          /><q-avatar color="warning" text-color="dark" class="reveal" icon="tag" :size="$q.screen.lt.md ? 'lg' : 'xl'" />
           <q-chip
             color="primary"
             :size="$q.screen.lt.md ? 'lg' : 'xl'"
             text-color="dark"
             label="Brand Consistency"
+            class="reveal"
           />
           <br /><q-chip
             color="accent"
             :size="$q.screen.lt.md ? 'lg' : 'xl'"
             text-color="dark"
             label="Social Media Assets"
-          /><q-avatar color="secondary" text-color="white" icon="bolt" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br /><q-avatar>
+            class="reveal"
+          /><q-avatar class="reveal" color="secondary" text-color="white" icon="bolt" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br /><q-avatar class="reveal">
             <img src="~assets/img-avi-casual-2.svg" :size="$q.screen.lt.md ? 'lg' : 'xl'"/>
           </q-avatar>
           <q-chip
@@ -123,12 +126,14 @@
             :size="$q.screen.lt.md ? 'lg' : 'xl'"
             text-color="dark"
             label="Template Design"
+            class="reveal"
           />
           <q-chip
             color="accent"
             :size="$q.screen.lt.md ? 'lg' : 'xl'"
             text-color="dark"
             label="Web Design"
+            class="reveal"
           />
         </div>
       </div>
@@ -139,14 +144,14 @@
     </q-banner>
     <!--toolkit-->
     <q-banner class="flex flex-center q-py-xl bg-grey-2">
-      <div class="text-center text-h3 text-weight-medium q-pt-xl q-pb-md text-grey-9 title-font">
+      <div class="reveal text-center text-h3 text-weight-medium q-pt-xl q-pb-md text-grey-9 title-font">
         Creative & Technical Toolkit
       </div>
-      <div class="text-center text-body1 q-pb-lg text-grey-8 lg-width-4 md-width-4 margin-auto">
+      <div class="reveal text-center text-body1 q-pb-lg text-grey-8 lg-width-4 md-width-4 margin-auto">
         A collection of tools and technologies I’ve worked with across design, development, and
         digital marketing—used to create, manage, and deliver effective solutions.
       </div>
-      <div class="q-pb-xl">
+      <div class="reveal q-pb-xl">
         <!-- Row 1 -->
         <div class="row justify-center margin-auto">
           <div class="col-6 col-sm-4 col-md-2 col-lg-1">
@@ -295,6 +300,17 @@
 <script setup>
 import FooterSection from 'src/components/FooterSection.vue'
 import WorkSection from 'src/components/WorkSection.vue'
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
+
+onMounted(() => {
+  ScrollReveal().reveal('.reveal', {
+    distance: '80px',
+    origin: 'bottom',
+    duration: 800,
+    easing: 'ease-out'
+  })
+})
 </script>
 <style>
 .round-corners {

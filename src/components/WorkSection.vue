@@ -1,11 +1,11 @@
 <template>
   <div
-    class="text-center text-weight-medium q-pt-xl q-pb-lg text-grey-9 title-font"
+    class="reveal text-center text-weight-medium q-pt-xl q-pb-lg text-grey-9 title-font"
     :class="$q.screen.lt.md ? 'text-h4' : 'text-h3'"
   >
     Personal Archive
   </div>
-  <div class="text-center text-body1 q-pb-lg text-grey-8 lg-width-3 md-width-3 margin-auto">
+  <div class="reveal text-center text-body1 q-pb-lg text-grey-8 lg-width-3 md-width-3 margin-auto">
     Selected concept work and speculative design projects exploring new tools, systems, and creative
     problem-solving.
   </div>
@@ -52,4 +52,16 @@
 import WorksBento from 'src/components/WorksBento.vue'
 
 //const tab = ref('all')
+
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
+
+onMounted(() => {
+  ScrollReveal().reveal('.reveal', {
+    distance: '80px',
+    origin: 'bottom',
+    duration: 800,
+    easing: 'ease-out'
+  })
+})
 </script>
