@@ -3,12 +3,13 @@
     <!--hero-->
     <div class="flex flex-center q-py-xl">
       <div class="column flex-center q-gutter-y-lg">
-        <img
+        <!--<img
           alt="Avilaine Imbang"
           src="~assets/avi.svg"
           class="margin-auto round-corners"
           :style="$q.screen.lt.md ? 'width: 100%; max-width: 100%;' : ''"
-        />
+        />-->
+        <img src="~assets/img-avi-casual.svg" alt="Avilaine Imbang" style="width: 200px; max-width: 100%;"/>
         <div
           class="text-center text-weight-medium"
           :class="$q.screen.lt.md ? 'text-h2' : 'text-h1'"
@@ -118,9 +119,7 @@
             text-color="dark"
             label="Social Media Assets"
             class="reveal"
-          /><q-avatar class="reveal" color="secondary" text-color="white" icon="bolt" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br /><q-avatar class="reveal">
-            <img src="~assets/img-avi-casual-2.svg" :size="$q.screen.lt.md ? 'lg' : 'xl'"/>
-          </q-avatar>
+          /><q-avatar class="reveal" color="secondary" text-color="white" icon="bolt" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br />
           <q-chip
             color="warning"
             :size="$q.screen.lt.md ? 'lg' : 'xl'"

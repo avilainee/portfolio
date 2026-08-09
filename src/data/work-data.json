@@ -114,7 +114,13 @@
       "tags": "Branding",
       "tagline": "Banging with every bite.",
       "coverImage": "img/jeangban-2.png",
-      "gallery": ["img/jeangban-1.png", "img/jeangban-2.png", "img/jeangban-3.png", "img/jeangban-4.png", "img/jeangban-5.png"]
+      "gallery": [
+        "img/jeangban-1.png",
+        "img/jeangban-2.png",
+        "img/jeangban-3.png",
+        "img/jeangban-4.png",
+        "img/jeangban-5.png"
+      ]
     },
     {
       "name": "ACTDAAN",
@@ -177,12 +183,19 @@
   ],
   "certifications": [
     {
+      "title": "PRINCIPLES OF GRAPHIC DESIGN",
+      "issuer": "UP - Open University",
+      "duration": "16 Hours",
+      "date": "2025"
+    },
+    {
       "title": "INTRODUCTION TO THE THREAT LANDSCAPE 3.0",
       "issuer": "Fortinet",
       "date": "2025"
     },
     {
       "title": "INTRODUCTION TO CYBERSECURITY",
+      "duration": "6 Hours",
       "issuer": "Cisco",
       "date": "2025"
     },
