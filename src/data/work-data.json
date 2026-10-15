@@ -133,18 +133,7 @@
     }
   ],
   "workExperience": [
-    {
-      "workid": 1,
-      "role": "Marketing Graphic Assistant",
-      "company": "RWC CSR (Freelance)",
-      "duration": "October 2025 - Present",
-      "tools": ["Adobe Photoshop", "Canva"],
-      "details": [
-        "Design weekly social media tiles in Figma for a real estate client, matching established brand fonts, colors, and identity guidelines.",
-        "Produce property image markups in Photoshop 3x monthly (outlines, callouts, location markups), delivering multiple versions per property.",
-        "Create property Information Memorandums in Canva 3x monthly using branded templates and client-supplied content."
-      ]
-    },
+    
     {
       "workid": 2,
       "role": "Freelance Digital Marketing & Research Assistant",
@@ -154,6 +143,18 @@
       "details": [
         "Produce ~100 social media promotional posters monthly (IG Story, FB Post, A3) in Canva for a film/entertainment client, customizing release-countdown templates with location, date, and cinema details.",
         "Conduct lead research and outreach (fishing charters, bait shops) tied to client content, compiling contacts and messaging prospects via Instagram for partnerships."
+      ]
+    },
+    {
+      "workid": 1,
+      "role": "Marketing Graphic Assistant",
+      "company": "RWC CSR (Freelance)",
+      "duration": "October 2025 - September 2026",
+      "tools": ["Adobe Photoshop", "Canva"],
+      "details": [
+        "Design weekly social media tiles in Figma for a real estate client, matching established brand fonts, colors, and identity guidelines.",
+        "Produce property image markups in Photoshop 3x monthly (outlines, callouts, location markups), delivering multiple versions per property.",
+        "Create property Information Memorandums in Canva 3x monthly using branded templates and client-supplied content."
       ]
     },
     {
