@@ -133,9 +133,8 @@
     }
   ],
   "workExperience": [
-    
     {
-      "workid": 2,
+      "workid": 1,
       "role": "Freelance Digital Marketing & Research Assistant",
       "company": "Remote (AU Stakeholders)",
       "duration": "June 2025 - Present",
@@ -146,11 +145,11 @@
       ]
     },
     {
-      "workid": 1,
+      "workid": 2,
       "role": "Marketing Graphic Assistant",
       "company": "RWC CSR (Freelance)",
       "duration": "October 2025 - September 2026",
-      "tools": ["Adobe Photoshop", "Canva"],
+      "tools": ["Adobe Photoshop", "Canva", "Figma"],
       "details": [
         "Design weekly social media tiles in Figma for a real estate client, matching established brand fonts, colors, and identity guidelines.",
         "Produce property image markups in Photoshop 3x monthly (outlines, callouts, location markups), delivering multiple versions per property.",
@@ -183,6 +182,11 @@
     }
   ],
   "certifications": [
+    {
+      "title": "INTRODUCTION TO DIGITAL MARKETING",
+      "issuer": "TESDA",
+      "date": "2026"
+    },
     {
       "title": "PRINCIPLES OF GRAPHIC DESIGN",
       "issuer": "UP - Open University",

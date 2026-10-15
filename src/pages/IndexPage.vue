@@ -76,13 +76,13 @@
           <span>●</span>
           <span>Open for full-time remote roles</span>
           <span>●</span>
-          <span>3+ years of experience</span>
+          <span>1+ years of experience</span>
           <span>●</span>
           <span>Based in Antipolo City, Rizal, Philippines</span>
           <span>●</span>
           <span>Open for full-time remote roles</span>
           <span>●</span>
-          <span>3+ years of experience</span>
+          <span>1+ years of experience</span>
           <span>●</span>
           <span>Based in Antipolo City, Rizal, Philippines</span>
           <span>●</span>
@@ -133,7 +133,13 @@
             text-color="dark"
             label="Web Design"
             class="reveal"
-          />
+          /><br /><q-chip
+            color="secondary"
+            :size="$q.screen.lt.md ? 'lg' : 'xl'"
+            text-color="white"
+            label="Real Estate Marketing Support"
+            class="reveal"
+          /><q-avatar class="reveal" color="warning" text-color="dark" icon="house" :size="$q.screen.lt.md ? 'lg' : 'xl'" /> <br />
         </div>
       </div>
     </q-banner>
